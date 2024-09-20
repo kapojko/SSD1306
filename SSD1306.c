@@ -45,6 +45,7 @@
 static struct SSD1306_Platform platform;
 
 // NOTE: if array is partly initialized, all non-mentioned elements will be set to 0
+__attribute__((aligned(4)))
 static uint8_t buffer[SSD1306_BUFF_SIZE + 1] = { SSD1306_DATA, 0 };
 
 static void writeToLcd(uint8_t data[], int len) {

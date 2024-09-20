@@ -96,7 +96,7 @@ void SSD1306_DefInit(bool xyFlip) {
     SSD1306_DisplayStartLineSet(0);
     SSD1306_ComScanInvert(xyFlip);
     SSD1306_SegmentRemap(xyFlip);
-    SSD1306_DisplayInvert(false);
+    SSD1306_SetNormalInverse(true);
     SSD1306_DisplayOn(true);
     SSD1306_EntireDisplayOn(false);
 

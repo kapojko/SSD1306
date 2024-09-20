@@ -5,7 +5,7 @@
 #include <stdbool.h>
 
 // I2C address
-#define SSD1306_I2C_ADDR_DEF 0x3C
+#define SSD1306_I2C_ADDR_DEFAULT 0x3C
 #define SSD1306_I2C_ADDR_ALTERNATE 0x3D // depends on D/C# pin
 
 #define SSD1306_I2C_BUFFER_SIZE 32
